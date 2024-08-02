@@ -18,25 +18,31 @@ package full_talleres;
 public class Taller1 {
     
     public static void main(String[] args) {
+        try {
+                System.out.println(Convertir_km_seg(40));
 
-        System.out.println(Convertir_km_seg(40));
+                System.out.println(Convertir_cm_lt(3500));
 
-        System.out.println(Convertir_cm_lt(3500));
+                System.out.println(Convertir_us_cops(45623 ));
 
-        System.out.println(Convertir_us_cops(45623 ));
+                System.out.println(Convertir_cent_far((float)5));
 
-        System.out.println(Convertir_cent_far((float)5));
+                System.out.println(Calcular_segs((short)1, (short)1, (short)1, (short)1));
 
-        System.out.println(Calcular_segs((short)1, (short)1, (short)1, (short)1));
+                System.out.println(Calcular_peso_carga((float)47.5, (float)7.5));
 
-        System.out.println(Calcular_peso_carga((float)47.5, (float)7.5));
+                System.out.println(Calcular_horasxviaje("Armenia", (short)285, (short)72));
 
-        System.out.println(Calcular_horasxviaje("Armenia", (short)285, (short)72));
+                System.out.println(Calcular_combustible(638, 312, 1243, 220));
 
-        System.out.println(Calcular_combustible(638, 312, 1243, 220));
+                System.out.println(Calcular_peso_luna((byte)80));
 
-        System.out.println(Calcular_peso_luna((byte)80));
+        }       
 
+        catch (Exception e) {
+    
+        }
+        
     }
 
      /*2.	Diseñe un algoritmo e implemente la función Convertir_km_seg que: reciba una velocidad entera en Km/seg 
